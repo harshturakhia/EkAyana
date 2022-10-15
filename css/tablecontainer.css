@@ -1,0 +1,140 @@
+:root {
+    --bs-body-color: #212529;
+    --bs-border-color: #dee2e6;
+    --light-text-color: #fff;
+    --dark-text-color: #212329;
+    --brightblue: #2F80ED;
+    --box-shadow-color: rgba(0, 0, 0, 0.5);
+    --brightred: #f9423d;
+    --lightred: #f9433dcc;
+}
+
+.main {
+    min-height: calc(100vh - 5rem);
+}
+
+.container {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.meet-btn-box {
+    position: relative;
+    width: 70%;
+    padding: 30px 0;
+}
+
+.meeting-box {
+    position: relative;
+    width: 70%;
+}
+
+.new-meet-btn {
+    background-color: var(--brightblue);
+    color: var(--light-text-color);
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 2px solid var(--brightblue);
+    border-radius: 5px;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--light-text-color);
+    padding: 6px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease-out;
+}
+
+.btn-add {
+    font-size: 1.5rem;
+}
+
+.btn-active {
+    background-color: var(--brightblue);
+    border: 2px solid var(--brightblue);
+}
+
+.btn-red {
+    background-color: var(--brightred);
+    border: 2px solid var(--brightred);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--dark-text-color);
+    cursor: pointer;
+}
+
+.btn-active:hover {
+    border: 2px solid var(--brightblue);
+}
+
+.btn-red:hover {
+    border: 2px solid var(--brightred);
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+    /* border: 0px
+    border-color: inherit;
+    border-style: solid; */
+    border-width: 0;
+}
+
+.table {
+    --bs-table-color: var(--bs-body-color);
+    --bs-table-bg: transparent;
+    --bs-table-border-color: var(--bs-border-color);
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: var(--bs-body-color);
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: var(--bs-body-color);
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: var(--bs-body-color);
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: var(--bs-table-color);
+    vertical-align: top;
+    border-color: var(--bs-table-border-color);
+}
+
+.table> :not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.table>tbody {
+    vertical-align: inherit;
+}
+
+.table>thead {
+    vertical-align: bottom;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: var(--bs-table-striped-color);
+}

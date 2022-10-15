@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ekAyana</title>
+         <!-- ---------------FONT----------- -->
+    <link
+    href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@200&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@500&family=Playfair+Display&family=Varela+Round&display=swap"
+    rel="stylesheet"
+  />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/adminPage.css" />
+    </head>
+    <body>
+        <!-- back to top btn -->
+        <div id="back-to-top"></div>
+        <!-- navigation bar -->
+        <div class="nav-container">
+            <nav class="navbar">
+                <h1 id="navbar-logo">ekAyana</h1>
+                <div id="mobile-menu" class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="/" class="btn btn-active">Home</a>
+                    </li>
+                    <li>
+                        <a href="/announcement" class="nav-links">
+                            Announcement
+                        </a>
+                    </li>
+                    <li><a href="/meetings" class="nav-links">Meetings</a></li>
+                    <li>
+                        <a href="/resources" class="nav-links">Resources</a>
+                    </li>
+                    <li><p class="btn btn-user">user : <%= name %></p></li>
+                    <li><a href="/logout" class="btn btn-red">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="navspacer"></div>
+        <div class="main">
+            <section class="hero">Admin page</section>
+        </div>
+        <footer class="footer">
+            <div class="footer__addr">
+              <h1 class="footer__logo">ekAyana</h1>
+      
+              <h2>Contact Us</h2>
+      
+              <address>
+                Sector-15,Gandhinagar<br />
+      
+                <a class="footer__btn" href="mailto:ekAyana@gmail.com">Email Us</a>
+              </address>
+            </div>
+      
+            <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 class="nav__title">Announcement</h2>
+      
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Learn More</a>
+                  </li>
+      
+                  <li>
+                    <a href="#">Manage Account</a>
+                  </li>
+                </ul>
+              </li>
+      
+              <li class="nav__item">
+                <h2 class="nav__title">Meetings</h2>
+      
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Join Now</a>
+                  </li>
+      
+                  <li>
+                    <a href="#"></a>
+                  </li>
+      
+                  <li>
+                    <a href="#"></a>
+                  </li>
+      
+                  <li>
+                    <a href="#"></a>
+                  </li>
+      
+                  <li>
+                    <a href="#"></a>
+                  </li>
+      
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </li>
+      
+              <li class="nav__item">
+                <h2 class="nav__title">Support</h2>
+      
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+      
+                  <li>
+                    <a href="#">Help Desk</a>
+                  </li>
+      
+                  <li>
+                    <a href="#">Forums</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+      
+            <div class="legal">
+              <p>&copy; 2022 Copyright.</p>
+            </div>
+          </footer>
+        <!-- scripts -->
+        <script src="./js/script.js"></script>
+    </body>
+</html>

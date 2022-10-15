@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Register User</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./css/login.css" />
+    </head>
+    <body>
+        <form action="/register" method="post">
+            <div class="image">
+                <img src="./images/add-user.png" alt="add user image" />
+            </div>
+            <div>
+                <!-- <div class="inputGroup">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Name"
+                        required
+                    />
+                </div> -->
+                <div class="inputGroup">
+                    <label for="email" id="emailLabel">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="email@domain.com"
+                        required
+                    />
+                </div>
+                <div class="inputGroup">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                        required
+                    />
+                </div>
+                <div class="inputGroup btn">
+                    <button type="submit">Register</button>
+                    <br />
+                </div>
+            </div>
+            <!-- <button><a href="/login">Login</a></button> -->
+        </form>
+    </body>
+</html>

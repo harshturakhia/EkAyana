@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./css/login.css" />
+    </head>
+    <body>
+        <% if(loginmessage !== '') { %>
+        <div class="alert-box">
+            <strong>Error: </strong>
+            <p><%= loginmessage %></p>
+        </div>
+        <% } %>
+        <form action="/login" method="post">
+            <div class="image">
+                <img src="./images/user.png" alt="add user image" />
+            </div>
+            <div>
+                <div class="inputGroup">
+                    <label for="email" id="emailLabel">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="email@domain.com"
+                        required
+                    />
+                </div>
+                <div class="inputGroup">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                        required
+                    />
+                </div>
+                <div class="inputGroup btn">
+                    <button type="submit">Log in</button>
+                    <br />
+                </div>
+            </div>
+            <!-- <button><a href="/register">Register</a></button> -->
+        </form>
+    </body>
+</html>
